@@ -1,0 +1,28 @@
+"name": "logstash"
+"summary": |
+  Logstash helps you process logs and other event data.
+"maintainers":
+- "Matt Bruzek <matthew.bruzek@canonical.com>"
+- "Chuck Butler <charles.butler@canonical.com>"
+"description": |
+  Logstash is a data pipeline that helps you process logs and other event data
+  from a variety of systems. With 200 plugins and counting, Logstash can
+  connect to a variety of sources and stream data at scale to a central
+  analytics system.
+"tags":
+- "logging"
+- "data-processing"
+"series":
+- "xenial"
+"requires":
+  "elasticsearch":
+    "interface": "elasticsearch"
+"provides":
+  "java":
+    "interface": "java"
+    "scope": "container"
+  "client":
+    "interface": "logstash-client"
+  "beat":
+    "interface": "elastic-beats"
+"subordinate": !!bool "false"

@@ -1,0 +1,8 @@
+"generate-noise":
+  "description": |
+    simulates noise -  this is useful when testing logstash shipping with no relations
+  "params":
+    "noise":
+      "type": "integer"
+      "description": "Number of lines of noise to generate"
+      "default": !!int "2000"

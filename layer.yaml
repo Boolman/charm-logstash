@@ -1,0 +1,14 @@
+"options":
+  "logstash": {}
+  "basic":
+    "use_venv": !!bool "false"
+    "packages": []
+    "include_system_packages": !!bool "false"
+"includes":
+- "layer:basic"
+- "interface:java"
+- "interface:elasticsearch"
+- "interface:logstash-client"
+- "interface:elastic-beats"
+"repo": "https://github.com/juju-solutions/layer-logstash"
+"is": "logstash"
